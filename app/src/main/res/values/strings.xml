@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BleTool_1</string>
+
+    <string name="scan_ble">Start Scan</string>
+    <string name="select_device">Select a device</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="device">Device:</string>
+    <string name="no_device">&lt;Select a device&gt;</string>
+</resources>
