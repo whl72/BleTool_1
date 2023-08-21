@@ -27,8 +27,12 @@
     <!-- 蓝牙权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-<!--    为适配安卓6.0以及以上版本需要添加一个模糊定位的权限-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--位置权限-->
+    <!--Android 10以上系统，需要ACCESS_FINE_LOCATION-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+    <!--Android 9以及以下系统，需要ACCESS_FINE_LOCATION, 本调试机器为android 8-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
 <!--    手机权限管理中允许此权限，否则会出现无法搜索到设备的情况；-->
 
 <!--    BLE权限增加了BEL支持检查-->

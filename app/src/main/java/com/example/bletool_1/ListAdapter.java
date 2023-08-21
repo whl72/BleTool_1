@@ -50,6 +50,11 @@ public class ListAdapter extends ArrayAdapter<MyBleInfo> {
         TextView b_rssi = view.findViewById(R.id.rssi_val);
         TextView b_state = view.findViewById(R.id.state);
 
+        b_name.setText(info.getName());
+        b_rssi.setText(info.getRssi());
+        b_uuid.setText(info.getUuid());
+        b_state.setText(info.getState());
+
         return view;
     }
 }
